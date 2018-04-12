@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Jsp_fileUpload</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Sample Servlet</description>
+    <display-name>Jsp_fileUploadServlet</display-name>
+    <servlet-name>Jsp_fileUploadServlet</servlet-name>
+    <servlet-class>com.example.myproject.Jsp_fileUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Jsp_fileUploadServlet</servlet-name>
+    <url-pattern>/jsp_fileupload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UploadFile</display-name>
+    <servlet-name>UploadFile</servlet-name>
+    <servlet-class>com.gbn.servlet.UploadFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadFile</servlet-name>
+    <url-pattern>/UploadFile</url-pattern>
+  </servlet-mapping>
+</web-app>
