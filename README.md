@@ -1,13 +1,18 @@
 # JSP
 
 Declaratives :
+
 <%!  Dec var  %>
  Whatever we declare in declarative will go to out side the service method in translation phase.
 •	We can declare a static member, an instance variable (can declare a number or string) and methods inside the declaration tag.
+
 Scriptlet : 
+
 Allows to write java code within jsp. All code goes in to service method after conversion.
 <%  out.println(“hello”); %>
+
 Expression :
+
 Expression tag evaluates the expression placed in it.
 <%=      %>
 What are JSP Directives?
